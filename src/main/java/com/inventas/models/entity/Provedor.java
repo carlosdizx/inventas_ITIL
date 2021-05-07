@@ -7,17 +7,16 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "provedores")
-public class Provedor implements Serializable
-{
+public class Provedor implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @ManyToOne(fetch = FetchType.LAZY )
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "tipo_doc")
-    @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private TipoDocumento tipoDocumento;
 
     private Long documento;
@@ -34,6 +33,14 @@ public class Provedor implements Serializable
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public TipoDocumento getTipoDocumento() {
+        return tipoDocumento;
+    }
+
+    public void setTipoDocumento(TipoDocumento tipoDocumento) {
+        this.tipoDocumento = tipoDocumento;
     }
 
     public Long getDocumento() {

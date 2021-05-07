@@ -1,3 +1,11 @@
+INSERT INTO tipo_doc (nombre) VALUES ('C.C. Cedula de ciudadania');
+INSERT INTO tipo_doc (nombre) VALUES ('NIT');
+INSERT INTO tipo_doc (nombre) VALUES ('C.E. Cedula de extranjeria');
+INSERT INTO tipo_doc (nombre) VALUES ('P.A. Pasaporte');
+/*
+INSERT INTO tipo_doc (nombre) VALUES ('A.S. Adulto sin identificar');
+*/
+
 INSERT INTO empresa (celular, codigo_ccc, cod_invima, correo, nombre, telefono) VALUES (3163930876,'1555-IU','155874-BN','arenad@center.com','Arena Center',3163930876);
 INSERT INTO empresa (celular, codigo_ccc, cod_invima, correo, nombre, telefono) VALUES (3163930876,'1555-CU','1554545-BL','tienda@jjcorreo.com','JJ Tienda',3163930876);
 INSERT INTO empresa (celular, codigo_ccc, cod_invima, correo, nombre, telefono) VALUES (3163930876,'1555-VB','1550045-HJ','pollos@faraon.com','Pollos Faraon',3163930876);
@@ -6,3 +14,6 @@ INSERT INTO sucursales (celular, codigo_postal, correo, departamento, direccion,
 INSERT INTO sucursales (celular, codigo_postal, correo, departamento, direccion, estado, municipio, pais, telefono) VALUES (3163930876,'520001','arena2@center.com','Nariño','Cl 16 #55-40',true,'Pasto','Colombia',3163930876);
 INSERT INTO sucursales (celular, codigo_postal, correo, departamento, direccion, estado, municipio, pais, telefono) VALUES (3163930876,'520006','arena3@center.com','Nariño','kra 3 #2a-16',true,'Pasto','Colombia',3163930876);
 INSERT INTO sucursales (celular, codigo_postal, correo, departamento, direccion, estado, municipio, pais, telefono) VALUES (3163930876,'520003','arena4@center.com','Nariño','Diag 2 Estadio Libertad 15-60',false,'Pasto','Colombia',3163930876);
+
+
+INSERT INTO provedores (correo, documento, nombre, telefono, tipo_doc) VALUES ('prove1@gmail.com',1082749257,'Carlos Díaz',3163930876,4);
