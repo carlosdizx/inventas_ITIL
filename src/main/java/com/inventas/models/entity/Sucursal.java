@@ -30,6 +30,8 @@ public class Sucursal implements Serializable
 
     private String correo;
 
+    private boolean estado;
+
     public Integer getId() {
         return id;
     }
@@ -100,5 +102,13 @@ public class Sucursal implements Serializable
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 }
