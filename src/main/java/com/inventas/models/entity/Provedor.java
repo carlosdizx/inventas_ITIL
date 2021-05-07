@@ -1,5 +1,7 @@
 package com.inventas.models.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -12,6 +14,11 @@ public class Provedor implements Serializable
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    @ManyToOne(fetch = FetchType.LAZY )
+    @JoinColumn(name = "tipo_doc")
+    @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
+    private TipoDocumento tipoDocumento;
 
     private Long documento;
 
